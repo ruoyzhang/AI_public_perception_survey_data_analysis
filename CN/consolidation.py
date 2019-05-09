@@ -41,3 +41,21 @@ def consolidate_mc(dataset, questions, q_number):
 		q_answers.append(answers)
 
 	return(q_answers)
+
+
+def simplify_sgq(dataset, q_number):
+	"""
+	function to simply single choice questions
+	we get rid of the text and only keep the ref(ind)
+
+	dataset: the dataset, a pandas Dataframe object
+	q_number: int or str, the question number to deal with
+	"""
+	# reformating the q_number variable
+	q_number = int(q_number)
+	q_number = "q{:02}".format(q_number)
+
+	# converting
+	answers = [answer.split('.')[0] for answer in dataset[q_number]]
+
+	return(answers)
