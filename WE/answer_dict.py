@@ -1,6 +1,6 @@
 uk_dict = {
 	'q01':{
-	'A': 'Never heard of them'
+	'A': 'Never heard of them',
 	'B': 'Heard but not sure what they are',
 	'C': 'Know what they are',
 	'D': 'Know a lot about them',
@@ -29,12 +29,12 @@ uk_dict = {
 	'C': 'Better professional performance',
 	'D': 'New business opportunities created',
 	'E': 'none'
-	}
+	},
 	'q11':{
 	'A': 'Artificial Intelligence not 100% reliable and can lead me to make mistakes',
 	'B': 'reduced job security',
 	'C': 'reduced human interaction',
-	'D': 'Lack of/misaligned accountability when AI misfiresne',
+	'D': 'Lack of/misaligned accountability when AI misfires',
 	'E': 'none'
 	},
 	'q14':{
@@ -75,10 +75,10 @@ uk_dict = {
 	},
 	'q19':{
 	'A': 'Lack of human interaction',
-	'A': 'Highly repetitive',
-	'A': 'Lack of prestige',
-	'A': 'Skills required for the job is expensive and hard to come by',
-	'A': 'Lack of creativity'
+	'B': 'Highly repetitive',
+	'C': 'Lack of prestige',
+	'D': 'Skills required for the job is expensive and hard to come by',
+	'E': 'Lack of creativity'
 	},
 	'q20':{
 	'A': 'Yes',
@@ -102,7 +102,7 @@ uk_dict = {
 	'q23':{
 	'A': 'Yes',
 	'B': 'No',
-	'C': 'Maybe'
+	'C': 'Not sure'
 	},
 	'q24':{
 	'A': 'Ensuring objectivity in AI decision making',
@@ -116,7 +116,7 @@ uk_dict = {
 	'C': 'between 26 and 35',
 	'D': 'between 36 and 45',
 	'E': 'between 46 and 55',
-	'D': '56 or older'
+	'F': '56 or older'
 	},
 	'q27':{
 	'A': 'High school diploma or equivalent',
@@ -135,7 +135,7 @@ uk_dict = {
 
 fr_dict = {
 	'q01':{
-	'A': 'Je n\'en ai jamais entendu parler'
+	'A': 'Je n\'en ai jamais entendu parler',
 	'B': 'J\'en ai entendu parler mais je ne suis pas sur de ce que c\'est',
 	'C': 'Je sais ce que c\'est',
 	'D': 'J\'en sais beaucoup sur le sujet',
@@ -164,7 +164,7 @@ fr_dict = {
 	'C': 'Meilleure performance professionnelle',
 	'D': 'Nouvelles opportunités commerciales',
 	'E': 'aucun'
-	}
+	},
 	'q11':{
 	'A': 'L\'intelligence artificielle n\'est pas fiable à 100% et peut me conduire à commettre des erreurs',
 	'B': 'Sécurité d\'emploi réduite',
@@ -210,10 +210,10 @@ fr_dict = {
 	},
 	'q19':{
 	'A': 'Manque d\'interaction humaine',
-	'A': 'Très répétitif',
-	'A': 'Manque de prestige',
-	'A': 'Les compétences requises pour le travail sont coûteuses et difficiles à trouver',
-	'A': 'Manque de créativité'
+	'B': 'Très répétitif',
+	'C': 'Manque de prestige',
+	'D': 'Les compétences requises pour le travail sont coûteuses et difficiles à trouver',
+	'E': 'Manque de créativité'
 	},
 	'q20':{
 	'A': 'Oui',
@@ -251,7 +251,7 @@ fr_dict = {
 	'C': 'entre 26 et 35',
 	'D': 'entre 36 et 45',
 	'E': 'entre 46 et 55',
-	'D': '56 ans et plus'
+	'F': '56 ans et plus'
 	},
 	'q27':{
 	'A': 'Diplôme d\'études secondaires ou l\'équivalent',
@@ -269,7 +269,7 @@ fr_dict = {
 
 de_dict = {
 	'q01':{
-	'A': 'Nie davon gehört'
+	'A': 'Nie davon gehört',
 	'B': 'Gehört, aber nicht sicher, was sie ist',
 	'C': 'Weiß, was sie ist',
 	'D': 'Ich weiß viel über sie',
@@ -298,7 +298,7 @@ de_dict = {
 	'C': 'Bessere berufliche Leistung',
 	'D': 'Neue Geschäftsmöglichkeiten geschaffen',
 	'E': 'keine'
-	}
+	},
 	'q11':{
 	'A': 'Künstliche Intelligenz ist nicht 100% zuverlässig und kann mich zu Fehlern führen',
 	'B': 'geringere Arbeitsplatzsicherheit',
@@ -344,10 +344,10 @@ de_dict = {
 	},
 	'q19':{
 	'A': 'Mangel an menschlicher Interaktion',
-	'A': 'Sehr repetitiv',
-	'A': 'Mangel an Prestige',
-	'A': 'Die für den Job erforderlichen Fähigkeiten sind teuer und schwer zu bekommen',
-	'A': 'Mangel an Kreativität'
+	'B': 'Sehr repetitiv',
+	'C': 'Mangel an Prestige',
+	'D': 'Die für den Job erforderlichen Fähigkeiten sind teuer und schwer zu bekommen',
+	'E': 'Mangel an Kreativität'
 	},
 	'q20':{
 	'A': 'Ja',
@@ -385,7 +385,7 @@ de_dict = {
 	'C': 'zwischen 26 und 35',
 	'D': 'zwischen 36 und 45',
 	'E': 'zwischen 46 und 55',
-	'D': '56 oder älter'
+	'F': '56 oder älter'
 	},
 	'q27':{
 	'A': 'Abitur oder gleichwertig',
@@ -399,3 +399,5 @@ de_dict = {
 	'B': 'Nein'
 	}
 }
+
+answer_dicts = {'en': uk_dict, 'fr': fr_dict, 'de': de_dict}
