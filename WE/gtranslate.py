@@ -44,7 +44,7 @@ class selenium_gtranslate():
 		text_box.send_keys(text)
 
 		# wait for a second
-		time.sleep(1)
+		time.sleep(1.5)
 
 		# retrive the translated text
 		translated = self.driver.find_element_by_xpath("//div[@class = 'result-shield-container tlid-copy-target']")
@@ -77,8 +77,8 @@ class selenium_gtranslate():
 		for i, text in enumerate(texts):
 			translated.append(self.translate_text(text))
 			now = time.time()
-			print('text no.{} translation complete'.format(i+1))
-			print('total time lapsed so far: {:02} seconds'.format(now - begin))
-			print('estimated time remaining: {:02} seconds'.format((now - begin)/(i+1)*(len(texts) - i + 1)))
+			to_print = "text no.{} complete,total time lapsed: {:02} seconds, estimated time remaining: {:02} seconds".format(i+1, now - begin, (now - begin)/(i+1)*(len(texts) - i + 1))
+			to_print = '\r' + to_print
+			print(to_print, end = '')
 
 		return(translated)
