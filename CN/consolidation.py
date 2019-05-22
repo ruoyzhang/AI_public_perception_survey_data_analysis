@@ -59,3 +59,29 @@ def simplify_sgq(dataset, q_number):
 	answers = [answer.split('.')[0] for answer in dataset[q_number]]
 
 	return(answers)
+
+def convert_to_list(dataset, q_number):
+	"""
+	function to convert str-fied lists back into lists
+
+	dataset: the dataset, a pandas Dataframe object
+	q_number: int or str, the question number to deal with
+
+	"""
+	# reformating the q_number variable
+	q_number = int(q_number)
+	q_number = "q{:02}".format(q_number)
+
+	# conversion
+	to_return = [ans.replace('[', '').replace(']','').replace('\'', '').split(',') for ans in dataset[q_number]]
+
+	return(to_return)
+
+
+
+
+
+
+
+
+
