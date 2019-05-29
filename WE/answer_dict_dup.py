@@ -118,25 +118,6 @@ uk_dict = {
 	'E': 'between 46 and 55',
 	'F': '56 or older'
 	},
-	'q26':{
-	'A': 'comp_sci_software_eng',
- 	'B': 'education',
- 	'C': 'engineer_various',
- 	'D': 'engineering_various',
- 	'E': 'finance_acc_aud',
- 	'F': 'internet_digital_non_engineering',
- 	'G': 'internet_non_enginerring',
- 	'H': 'media_culture_creative',
- 	'I': 'medical_professionals',
- 	'J': 'mgmt_various',
- 	'K': 'professional_services',
- 	'L': 'public_security',
- 	'M': 'public_service',
- 	'N': 'research',
- 	'O': 'student_various',
- 	'P': 'unemployed_retired',
- 	'Q': 'other'
- 	},
 	'q27':{
 	'A': 'High school diploma or equivalent',
 	'B': 'Bachelor\'s degree or equivalent',
